@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+     <script
+     src="http://code.jquery.com/jquery-3.4.1.js"
+     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+     crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../javascript/js1.js"></script>
+        <style>
+          table tr{
+                border:dotted 20px white; 
+        }
+        </style>
+    <title>登录页面</title>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav"> 
+                      
+                    </ul>
+                    <form class=" navbar-nav nav navbar-left">
+                        <li><a href="响应式布局首页.html">返回首页</a></li>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="登录.html">登录</a></li>
+                      <li><a href="注册.html">注册</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>   
+              <div class="container-fluid">
+                  <div class="row">
+                          <div class="col-md-4"></div>
+                          <div align="center" class="col-md-4">
+                                  <form  id="表单" name="form0" action=" ">
+                                          <table>
+                                              <tr>
+                                                  <td><label>昵称：</label></td>
+                                                  <td><input type="text" name="昵称" id="text1" placeholder="Username"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td><label>密码：</label></td>
+                                                  <td><input id="ps1" type="password" name="hidepassword" placeholder="password" >
+                                                      <input type="text" name="showpassword"   hidden="true" >
+                                                      <input type="button" value="显示密码" style="height:30px;width:100px;font: size 12px; " name="show" onclick="see()">
+                                                      <input type="button" value="隐藏密码" style="height:30px;width:100px;font: size 12px; " hidden="true" name="hide" onclick="nosee()">
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td><label>确认密码：</label></td>
+                                                  <td><input id="ps2" type="password" name="hidepassword2" id="password2" placeholder="passwordconfirmation">
+                                                      <input type="text" name="showpassword2" hidden="true">
+                                                      <input type="button" value="显示密码" style="height:30px;width:100px;font: size 12px; " name="show2" onclick="see2()">
+                                                      <input type="button" value="隐藏密码" style="height:30px;width:100px;font: size 12px; " hidden="true" name="hide2" onclick="nosee2()">
+                                                  </td>
+                                              </tr>
+                                              
+                                              <tr>
+                                                  <td style="padding-left:22%"><input  type="button" value="登录" style="height:30px;width:100px;font: size 12px; " onclick="judge()"></td>
+                                                  <td style="padding-left:30%"><input  type="button" value="注册" style="height:30px;width:100px;font: size 12px; " onclick="location='注册.html'"></td>
+                                              </tr>
+                                          
+                                          </table>
+                                      </form>
+                          </div>
+                          <div class="col-md-4"></div>
+                        
+                  </div>
+                </div>       
+</body>
+</html>

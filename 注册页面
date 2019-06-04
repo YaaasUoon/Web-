@@ -16,14 +16,24 @@
 
         </script>
         <style>
-        table tr{
-                border:dotted 20px white; 
-        }
+          body{
+            background: url("../images/bg.png");
+          }
+          table{
+            margin: 60% 0 65%;
+          }
+          
+          table td{
+            border: 5px solid rgb(212, 203, 149);
+            border-radius: 5px #df5a5a solid;
+            box-shadow: #df5a5a 0px 0px 50px; 
+          }
+          
         </style>
     <title>注册页面</title>
 </head>
 <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
@@ -52,7 +62,7 @@
               <div class="container-fluid">
                 <div class="row">
                         <div class="col-md-4"></div>
-                        <div align="center" class="col-md-4">
+                        <div align="center" class="col-md-4 aas">
                                 <form  id="表单" name="form0" action=" ">
                                         <table>
                                             <tr>
@@ -80,7 +90,7 @@
                                                 <td><input type="email" name="email1" id="email1" placeholder="email"></td>
                                             </tr>
                                             <tr>
-                                                    <td style="padding-left:35%"><input  type="button" value="注册" style="height:30px;width:100px;font: size 12px; " onclick="judge()"></td>
+                                                    <td colspan="2" style="padding-left: 39%;"><input  type="button" value="注册" style="height:30px;width:100px;font: size 12px; " onclick="judge()"></td>
                                             </tr>
                                         
                                         </table>
@@ -89,6 +99,35 @@
                         <div class="col-md-4"></div>
                       
                 </div>
-              </div>         
+              </div>   
+              <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <p class="navbar-brand" style="font-size:20px;line-height:20px;color: brown;" >页面信息一览：</p>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                      <li><p style="margin:15px 12px 0 0"> 作者：&#9749郑思喆</p></li>
+                      <li><p style="margin:15px 12px 0 0"> wechat：</p></li>
+                      <li><p style="margin:15px 12px 0 0"> QQ：</p></li>
+                    </ul>
+                    
+                    <ul class="nav navbar-nav" style="margin-left:50%">
+                      <li><a style="color: rgb(186, 92, 233)"  href="https://github.com/YaaasUoon/Web-" target="_blank">源码链接：github：yaaasUoon</a></li>
+                      
+                      
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>      
 </body>
 </html>
